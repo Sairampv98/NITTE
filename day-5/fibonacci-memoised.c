@@ -3,12 +3,14 @@
 int memo[100] ;
 
 int fib_memo(int n){
-    if(n==0)
+    if(n==0){
         memo[0]= 0;
         return 0;
-    if(n==1)
+    }
+    if(n==1){
         memo[1]=1;
-        return ;
+        return 1;
+    }
     if(memo[n] != -1){
         return memo[n];
     }else{
@@ -21,7 +23,7 @@ int main(){
     int num =4,res=0;
     printf("Type a number to check its fibonacci number for\n");
     scanf("%d",&num);
-    memset(memo,-1,sizeof(int));
+    memset(memo,-1,sizeof(memo));
     
     for(int i=4; i>=0; i--){
         res = fib_memo(i);

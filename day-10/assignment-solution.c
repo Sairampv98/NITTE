@@ -218,7 +218,7 @@ int main(){
 //The idea was to use a dipatch table to have a menu cli tool here is corrected & updated code.
 
 /*
- * Employee Management System — Day 10
+ * Employee Management System
  * Built on the user's draft; bugs fixed, dispatch-table loop added.
  *
  * Bug fixes applied
